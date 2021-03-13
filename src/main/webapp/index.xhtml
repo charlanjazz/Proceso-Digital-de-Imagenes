@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <body>
+        <ui:composition template="./WEB-INF/templates/html.xhtml">
+
+            <ui:define name="welcome">
+                <p>Bienvenido al sistema de filtros de la clase Proceso Digital de Imagenes</p>
+                <p class="text-primary small">
+
+                </p>
+                <hr />
+                <ui:fragment rendered="#{not empty editor.foto}">
+                    <p class="small">
+                        Comienza probando los filtros que se encuentran en la 
+                        barra de navegación.
+                    </p>
+                </ui:fragment>
+            </ui:define>
+
+        </ui:composition>
+    </body>
+</html>
